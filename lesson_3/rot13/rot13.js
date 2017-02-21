@@ -10,16 +10,16 @@ var rotateCount = 13;
 
 function isFirstAlphabetHalf(charCode) {
   return (charCode >= baseCharCodes['A'] &&
-           charCode < (baseCharCodes['A'] + halfLength)) ||
+           charCode <= (baseCharCodes['A'] + halfLength)) ||
           (charCode >= baseCharCodes['a'] &&
-           charCode < (baseCharCodes['a'] + halfLength));
+           charCode <= (baseCharCodes['a'] + halfLength));
 }
 
 function isLastAlphabetHalf(charCode) {
   return (charCode <= baseCharCodes['Z'] &&
-          charCode > (baseCharCodes['Z'] - halfLength)) ||
+          charCode >= (baseCharCodes['Z'] - halfLength)) ||
          (charCode <= baseCharCodes['z'] &&
-          charCode > (baseCharCodes['z'] - halfLength));
+          charCode >= (baseCharCodes['z'] - halfLength));
 }
 
 function rot13(string) {
