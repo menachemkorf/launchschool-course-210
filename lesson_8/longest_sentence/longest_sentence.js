@@ -29,7 +29,7 @@ var longText = 'Four score and seven years ago our fathers brought forth' +
   ' earth.';
 
 function strip(string) {
-  return string.replace(/^ |$ /, '');
+  return string.replace(/^ |$ /g, '');
 }
 
 function splitWords(string) {
